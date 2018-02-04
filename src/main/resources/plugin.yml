@@ -1,0 +1,23 @@
+name: ChatPatch
+main: com.gmail.jacc734dev.chatpatch.ChatPatch
+version: 1.0.1-SNAPSHOT
+depend: [ProtocolLib]
+
+commands:
+  chatpatch:
+    description: Player controlled chat filtering.
+    usage: "Usage: '/chatpatch on', '/chatpatch off'"
+
+permissions:
+    chatpatch.on:
+        description: Enable ChatPatch Filter
+        default: true
+    chatpatch.off:
+        description: Disable ChatPatch Filter
+        default: true
+    chatpatch.save:
+        description: Saves ChatPatch config
+        default: op
+    chatpatch.defaults:
+        description: Loads ChatPatch default-config #will clear stored String(UUIDs)
+        default: op
